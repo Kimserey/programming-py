@@ -1,0 +1,12 @@
+# Visual Studio Code files.
+.vscode/
+
+# Python virtual environment
+venv/
+
+# Python compiled files
+__pycache__/
+
+# Python distribution folders
+dist/
+*.egg-info/
