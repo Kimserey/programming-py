@@ -4,25 +4,26 @@ import random
 import re
 import sys
 
+
 def isBalanced(s):
-    stack=[]
+    stack = []
 
     for s in s:
-        if s == '[' or s == '(' or s =='{':
+        if s == "[" or s == "(" or s == "{":
             stack.append(s)
         else:
             if len(stack) == 0:
-                return 'NO'
+                return "NO"
             else:
                 top = stack[len(stack) - 1]
 
-                if top == '[' and s == ']':
+                if top == "[" and s == "]":
                     stack.pop()
-                elif top == '(' and s == ')':
+                elif top == "(" and s == ")":
                     stack.pop()
-                elif top == '{' and s == '}':
+                elif top == "{" and s == "}":
                     stack.pop()
                 else:
-                    return 'NO'
+                    return "NO"
 
-    return 'YES' if len(stack) == 0 else 'NO'
+    return "YES" if len(stack) == 0 else "NO"

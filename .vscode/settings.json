@@ -1,0 +1,11 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "python.pythonPath": "venv/bin/python3",
+    "python.formatting.provider": "black",
+    "[python]": {
+      "editor.formatOnPaste": false
+    },
+    "files.trimTrailingWhitespace": true
+  }
